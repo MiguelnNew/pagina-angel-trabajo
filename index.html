@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Información de servicio - Papá</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --fondo: #0f111a;
+      --texto: #f5ecec;
+      --acento: #00d1ff;
+      --card-bg: #1f2330;
+      --radio: 12px;
+      --sombra: 0 10px 30px rgba(0, 209, 255, 0.2);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+      background: linear-gradient(135deg,#0f111a 0%,#1f2330 70%);
+      color: var(--texto);
+      line-height: 1.5;
+      min-height: 100vh;
+      padding: 0 12px;
+    }
+
+    header {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #fff;
+    }
+
+    p.lead {
+      margin: 8px 0 20px;
+      font-size: 1.1rem;
+      opacity: .9;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 10px 0 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 8px 14px;
+      background: var(--card-bg);
+      border-radius: 8px;
+      color: var(--acento);
+      font-weight: bold;
+      transition: background .2s;
+    }
+
+    nav a:hover {
+      background: rgba(255,255,255,.05);
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radio);
+      padding: 20px 24px;
+      max-width: 900px;
+      margin: 20px auto;
+      box-shadow: var(--sombra);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--acento);
+      font-size: 1.8rem;
+    }
+
+    .subtitulo {
+      font-size: .9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+      opacity: .8;
+    }
+
+    .lista {
+      padding-left: 1em;
+      margin-top: 4px;
+    }
+
+    footer {
+      text-align: center;
+      margin: 50px 0 20px;
+      font-size: .85rem;
+      opacity: .8;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #222b44;
+      padding: 4px 10px;
+      border-radius: 50px;
+      margin-right: 6px;
+      font-size: .75rem;
+    }
+
+    .contacto {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .contacto div {
+      flex: 1 1 200px;
+      background: rgba(255,255,255,.03);
+      padding: 12px;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 800px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Servicio de Reparación de Electrodomésticos</h1>
+    <p class="lead">Aquí encontrarás toda la información que necesitas saber sobre lo que arregla Angel.</p>
+    <nav aria-label="Navegación del contenido">
+      <a href="#cocina">Cocina</a>
+      <a href="#neveras">Neveras</a>
+      <a href="#licuadoras">Licuadoras</a>
+      <a href="#ventilador">ventilador</a>
+      <a href="#aire acondicionado">aire acodicionado</a>
+      <a href="#Lavadora">Lavadora</a>
+      <a href="#contacto">contactalo</a>
+    </nav>
+  </header>
+
+  <section id="cocina" class="card">
+    <div class="subtitulo">Información / Falla comunes</div>
+    <h2>Cocina</h2>
+    <p>La cocina puede referirse al lugar donde se preparan alimentos o al aparato utilizado para cocinar. Angel repara cocinas a gas, eléctricas y combina los conocimientos técnicos con experiencia práctica.</p>
+    <p><strong>Componentes principales</strong></p>
+    <div class="lista">
+    <ul>
+      <p><span class="badge">Quemadores o resistencia eléctrica</span></p>
+      <p><span class="badge">Horno</span></p>
+      <p><span class="badge">Encendedor eléctrico (en cocina de gas)</span></p>
+      <p><span class="badge">Termostado (en hornos)</span></p>
+      <p><span class="badge">Parrillas y bandejas</span></p>
+    </ul>
+    </div>
+    <p><strong>Problemas comunes:</strong></p>
+    <div class="lista">
+      <ul>
+        <li>Quemadores que no encienden o calienta poco.</li>
+        <li>Fugas de gas.</li>
+        <li>Encendedor eléctrico que no funciona.</li>
+        <li>Horno que no calienta o calienta demasiado.</li>
+        <li>Perillas dañadas o flojas.</li>
+        <li>Termostado defectuoso.</li>
+      </ul>
+    </div>
+    <p><strong>Precio estimado de reparación</strong></p>
+    <p>entre $15 y $50 USD, dependiendo de la pieza y la complejidad de reparacion.</p>
+  </section>
+
+  <section id="neveras" class="card">
+    <div class="subtitulo">Información / Falla comunes</div>
+    <h2>Neveras</h2>
+    <p>Una nevera conserva los alimentos al mantener temperaturas bajas mediante un ciclo de refrigeración. Angel revisa sistemas completos para que vuelvan a funcionar correctamente.</p>
+      <p><strong>Componentes principales:</strong></p>
+      <div class="lista">
+      <ul>
+       <p><span class="badge">Compresor</span></p>
+       <p><span class="badge">Condesador</span></p>
+       <p><span class="badge">Evaporador</span></p>
+       <p><span class="badge">Termostato</span></p>
+       <p><span class="badge">Ventilador interno</span></p>
+       <p><span class="badge">Tuberia y gas refrigerante</span></p>
+      </ul>
+      </div>
+       <h3>Fallas comunes</h3>
+       <div class="lista">
+        <ul>
+          <li>No enfria lo suficiente.</li>
+          <li>Congelador con exceso de hielo.</li>
+          <li>Compresor dañado.</li>
+          <li>fugas de gas refrigerante.</li>
+          <li>termostato defectuosos.</li>
+          <li>Puerta que no cierra bien.</li>
+        </ul>
+      </div>
+      <p><strong>Precio estimado de reparación</strong>
+        <p>Entre $20 y $100 USD, dependiendo de la avería y repuespos.</p>
+    </div>
+  </section>
+
+  <section id="licuadoras" class="card">
+    <div class="subtitulo">Información / Fallas comunes</div>
+    <h2>Licuadoras</h2>
+    <p>Una licuadora mezcla materiales, ya sea secos o líquidos. Angel revisa motor, cuchillas, conexiones eléctricas y sellos para que funcione suave y sin ruido.</p>
+    <div class="lista">
+    <ul>
+      <p><span class="badge">Motor eléctrico</span></p>
+      <p><span class="badge">cuchillas de acero</span></p>
+      <p><span class="badge">Vaso de vidrio o plastico</span></p>
+      <p><span class="badge">Base y controles</span></p>
+      <p><span class="badge">Junta o sello de goma</span></p>  
+    </ul>
+    </div>
+    <h3>Fallas comunes</h3>
+    <div class="lista">
+      <ul>
+        <li>cuchillas desgastadas o rotas.</li>
+        <li>Motor que no gira.</li>
+        <li>Olor a quemado al encender.</li>
+        <li>Fugas en la base del vaso.</li>
+        <li>Interrupto o botones dañados.</li>
+      </ul>
+    </div>
+    <p><strong>Precio estimado de reparación:</strong></p>
+    <p>Entre $10 y $30 USD, según la pieza y el daño.</p> 
+  </section>
+
+  <section id="ventilador" class="card">
+    <div class="subtitulo">Información / fallas comunes</div>
+    <h2>Ventilador</h2>
+    <p>un ventilador es un aparato eléctrico diseñado para mover el aire y generar una corriente que proporcione ventilacion y frescura en un espacio, Angel revisa cada Componente hasta encotra el fallo.</p>
+    <p><strong>Componentes principales:</strong></p>
+    <div>
+    <ul>
+      <p><span class="badge">Motor</span></p>
+      <pa><span class="badge">Aspas</span></p>
+        <p><span class="badge">Rejilla protectora</span></p>
+        <p><span class="badge">Base</span></p>
+        <p><span class="badge">Interrupto</span></p>
+    </ul>   
+    </div>
+    <h3>Problema comunes que puede presentar:</h3>
+    <ul>
+      <li>Motor que no gira o gira lento.</li>
+      <li>Hélices dañadas o sueltas.</li>
+      <li>Oscilacion que no funciona.</li>
+      <li>Cable de alimetacion roto.</li>
+      <li>Interrupto o control de velocidad defectuoso.</li>
+      <Li>ruido excesivo al gira.</Li>
+      <li>base o soporte inestable.</li>
+    </ul>
+    <p><strong>Precion estimado de reparación:</strong></p>
+    <p>Dependerá del daño y la piezas a cambiar, pero puede varia entre $5 y $20 USD en la mayoria de los casos.</p>
+    </div>
+  </section>
+
+  <section id="aire acondicionado" class="card">
+    <di class="subtitulo">Información / Falla comunes</di>
+    <h2>Aire acodicionado</h2>
+    <p>Un aire acodicionado es un aparato diseñado para enfriar, deshumidificar y,en algunos caso calentar el aire de un espacios encerrado, Angel revisara cada Componente hasta encotra el fallo</p>
+    <p><strong>Componentes principales:</strong></p>
+    <div>
+      <ul>
+        <p><span class="badge">Compresor</span></p>
+        <p><span class="badge">Condesador</span></p>
+        <p><span class="badge">Evaporador</span></p>
+        <p><span class="badge">Ventiladores</span></p>
+        <p><span class="badge">Filtro de aire</span></p>
+        <p><span class="badge">Termostado o control de electrónico</span></p>
+      </ul>
+    </div>
+    <p><strong>Fallas comunes</strong></p>
+    <div class="lista">
+      <ul>
+        <li>Fuga de refrigerante (pérdida de gas)</li>
+        <li>Filtro de aire sucios o saturados</li>
+        <li>Ventilador interno o externo dañado</li>
+        <li>Fallos en el Compresor</li>
+        <li>Problema electrónicos en el panel de control</li>
+        <li>Bloqueo en el drenaje de agua (goteo)</li>
+      </ul>
+    </div>
+    <p><strong>Precio estimado de reparación</strong></p>
+    <p>Desde $30 hasta $150 USD, dependiendo del tipo de averia y del modelo del aire acondicionado.</p>
+  </section>
+
+  <section id="Lavadora" class="card">
+    <div class="subtitulo">Información / Falla comunes</div>
+    <h2>Lavadora</h2>
+    <p>una Lavadora es un electrodomésticos diseñado para lavar ropa y textiles de forma automatica, Angel la revisara hasta encotra la falla.</p>
+    <div class="lista">
+      <p><strong>Componentes principales:</strong></p>
+      <ul>
+        <p><span class="badge">Tambor</span></p>
+        <p><span class="badge">Motor</span></p>
+        <p><span class="badge">Bomba de desagüe</span></p>
+        <p><span class="badge">Resistencia</span></p>
+        <p><span class="badge">Panel de control</span></p>
+        <p><span class="badge">Mangueras de entrada y salida de agua</span></p>
+        <p><span class="badge">Amortiguadores y resortes</span></p>
+      </ul>
+    </div>
+    <p><strong>Problemas comunes</strong></p>
+    <div class="lista">
+      <ul>
+        <li>no centrifuga a no gira el tambor</li>
+        <li>perdida de agua</li>
+        <li>Filtro o bomba de desagúe obstruidos</li>
+        <li>Problemas eléctrico en el panel de control</li>
+        <li>Ruido fuerte por desgaste de rodamientos o amortiguadores</li>
+      </ul>
+    </div>
+    <p><strong>Precio estimado de reparación</strong></p>
+    <p>Desde $20 hasta $120, dependiendo de la averia y la marca de la Lavadora</p>
+  </section>
+
+  <section id="contacto" class="card">
+    <div class="subtitulo">Contácto</div>
+    <h2>Información de contacto</h2>
+    <div class="contacto">
+      <div>
+        <p><strong>Nombre:</strong> Angel Alfoso</p>
+        <p><strong>Apellido:</strong> Moreira Murillo</p>
+        <p><strong>Servicio:</strong> Reparación de electrodomésticos</p>
+      </div>
+      <div>
+        <p><strong>Teléfono:</strong> <em> 098 271 0584</em></p>
+        <p><strong>Ubicación:</strong> <em>Ecuador/Esmeraldas</em></p>
+      </div>
+    </div>
+    <p>Angel solo esta dispinible en Ecuador.</p>
+    <p>Esta es una página demo se estar mejorando cada vez q sea posible.</p>
+  </section>
+
+  <footer>
+    <p>Hecho con esfuerzo por <strong>Miguel</strong>.(hijo de Angel).estudiante de programacion.</p>
+  </footer>
+</body>
+</html>
